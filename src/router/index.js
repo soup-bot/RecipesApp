@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import RecipeView from '../views/RecipeView.vue';
 import HomeView from '../views/HomeView.vue';
+import AboutView from '../views/AboutView.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/:idMeal',
     name: 'recipe-view',
     component: RecipeView,
+  },
+  {
+    path: '/about',
+    name: 'about-view',
+    component: AboutView,
   }
  
 ];

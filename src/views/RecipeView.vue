@@ -40,7 +40,7 @@ const getIngredients = (meal) => {
 </script>
 
 <template>
-  <body>
+  <body class="recipebody">
     
   
   <div v-if="meal" class="container">
@@ -68,6 +68,7 @@ h2 {
 h4{
   font-size: 20px;
   font-weight: bold;
+  font-family: 'DM Serif Display', serif;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -93,10 +94,10 @@ ul {
   flex-direction: column;
   width: 70%;
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
   
 }
-.body{
+.recipebody{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +108,8 @@ ul, .meal-title, .meal-img-container, .ingredients{
   justify-self: center;
 }
 .meal-title{
-  font-size: 30px;
+  font-size: 38px;
+  font-family: 'DM Serif Display', serif;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -118,5 +120,12 @@ ul, .meal-title, .meal-img-container, .ingredients{
 }
 .instructions{
   margin-bottom: 50px;
+}
+*{
+  animation: fadeIn 0.3s;
+} 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 </style>

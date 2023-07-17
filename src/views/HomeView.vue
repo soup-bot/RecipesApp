@@ -35,7 +35,7 @@ watch(search, () => {
     
   
     <div class="search-container">
-      <input v-model="search" type="text" placeholder="Search" class="searchbar">
+      <input v-model="search" type="text" placeholder="Search.." class="searchbar">
     </div>
     <div class="page">
     <div class="cards-container">
@@ -66,13 +66,17 @@ watch(search, () => {
   justify-content: flex-start;
   width: 80%;
   vertical-align: top;
+ 
 }
 
 .card {
+ background-color: white;
   text-decoration: none;
   color: black;
   width: 200px;
+  margin-right: auto;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   border: 1px solid #ccc;
   margin: 25px 15px;
@@ -82,11 +86,13 @@ watch(search, () => {
   text-align: center;
   border-radius: 3%;
   box-shadow: 1px 1px 10px rgb(128, 128, 128, 0.2);
-  transition: scale 0.2s;
+  transition: box-shadow, scale, 0.2s;
   
 }
 .card:hover{
   scale: 1.05;
+  box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.51);
+  transform: rotate(2deg);
 }
 
 .card-image {
@@ -99,9 +105,10 @@ watch(search, () => {
 }
 
 .meal-name {
+  font-family: 'DM Serif Display', serif;
   font-weight: bold;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
@@ -115,11 +122,21 @@ watch(search, () => {
   font-size: 13px;
 }
 .searchbar{
+  border: 1px solid grey;
   align-self: center;
   justify-self: center;
   text-align: center;
   min-width: 80%;
+  font-size: 20px;
+  padding: 10px 0px;
+  border-radius: 5px;
+  outline: none;
+  margin: 30px 0;
 }
+.searchbar:hover, .searchbar:focus {
+    border: 1.5px solid #000000;
+    background-color: white;
+  }
 .body{
   display: flex;
   justify-content: center;
