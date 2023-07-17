@@ -1,6 +1,6 @@
 <template>
   <div class="deeznuts">
-  <h1>deez nuts</h1>
+  <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt labore saepe assumenda illum, quasi deleniti consequatur eaque ipsum cumque dolore consectetur vero iure tempora vel hic omnis fuga vitae velit.</h1>
 </div>
 </template>
 
