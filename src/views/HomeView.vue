@@ -87,7 +87,7 @@ watch(search, () => {
   text-align: center;
   border-radius: 3%;
   box-shadow: 1px 1px 10px rgb(128, 128, 128, 0.2);
-  transition: box-shadow, scale, 0.2s;
+  transition: all 0.2s;
   
 }
 .card:hover{
@@ -101,9 +101,19 @@ watch(search, () => {
 }
 
 .img {
+  margin-top: 10px;
   width: 180px;
   object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s;
+  opacity: 0.8;
 }
+.img:hover{
+  border-radius: 0;
+  scale: 1.1;
+  opacity: 1;
+}
+
 
 .meal-name {
   font-family: 'DM Serif Display', serif;
