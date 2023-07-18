@@ -37,6 +37,7 @@ watch(search, () => {
     <div class="search-container">
       <input v-model="search" type="text" placeholder="Search.." class="input">
     </div>
+    dropdown
     <div class="page">
     <div class="cards-container">
     <router-link :to="`/${meal.idMeal}`" v-for="meal in meals" class="card" :key="meal.idMeal">
