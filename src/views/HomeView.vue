@@ -55,9 +55,7 @@ watch(search, () => {
 
 .page{
   display: flex;
-  background-image: url(../assets/bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  
   justify-content: center;
   align-items: center;
   width: 100%;

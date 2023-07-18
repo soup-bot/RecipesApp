@@ -18,6 +18,8 @@ h2{
   font-size: 20px;
   margin: auto;
   opacity: 0;
+  
+  font-weight: lighter;
   /* margin: 60px 20px; */
   max-width: 500px;
   text-align: center;

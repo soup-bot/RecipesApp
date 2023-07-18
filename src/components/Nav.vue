@@ -20,10 +20,11 @@ import {RouterLink} from "vue-router"
 .navbar{
   display: flex;
   position: sticky;
-  width: 100vw;
+  width: 100%;
+  padding-top: 20px;
 
   justify-content: space-around;
-  padding: 20px;
+  /* padding: 20px; */
   background-image: none;
 }
 .logo{
@@ -33,12 +34,13 @@ import {RouterLink} from "vue-router"
   font-size: 25px;
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  
 
 }
 a{
   position: relative;
   text-decoration: none;
+  font-weight: bold;
   padding: 0 1px;
   color: rgba(0, 0, 0, 0.412);
 }
