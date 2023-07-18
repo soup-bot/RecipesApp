@@ -1,5 +1,5 @@
 <template>
-  <div class="deeznuts">
+  <div class="about-container">
 <h1>About us</h1>
   <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quia, tempore sed est consectetur qui. Repellendus earum aut voluptate magnam cum, debitis nobis porro quos. Veniam voluptatem at quae maiores odio id voluptatibus officiis provident quia odit, error atque eveniet eius consectetur natus exercitationem eaque quis, iste harum aut minima.</h2>
 </div>
@@ -25,7 +25,7 @@ h2{
 
 }
 
-.deeznuts{
+.about-container{
   animation: slideIn 1s ease-in-out forwards;
   width: 100%;
   display: flex;
