@@ -4,16 +4,24 @@ import {RouterLink} from "vue-router"
 </script>
 
 <template>
+  <div class="nav-container">
   <div class="navbar">
   <router-link active-class="active" to="/">Home</router-link>
   <img class="logo" src="../assets/icon.svg" alt="">
   <router-link active-class="active" to="/about">About</router-link>
   </div>
+</div>
 </template>
 
 <style scoped>
+.navcontainer{
+  margin: 500px;
+}
 .navbar{
   display: flex;
+  position: sticky;
+  width: 100vw;
+
   justify-content: space-around;
   padding: 20px;
   background-image: none;
@@ -32,7 +40,7 @@ a{
   position: relative;
   text-decoration: none;
   padding: 0 1px;
-  color: rgba(0, 0, 0, 0.721);
+  color: rgba(0, 0, 0, 0.412);
 }
 a::after{
   content:"";

@@ -87,7 +87,8 @@ h4{
 
 ul {
   list-style-type: disc;
-  padding-left: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .container{
   display: flex;
